@@ -1,0 +1,164 @@
+body
+{
+    margin: 0px;
+}
+.main-nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(10, 60, 124);
+}
+.main-nav h1
+{
+    color: whitesmoke;
+    font-size: 25px;
+    /* margin-left: 50px; */
+}
+.main-nav label
+{
+    color: whitesmoke;
+}
+
+
+.main-nav button , .main-content button
+{
+    background-color:green;
+    color: whitesmoke;
+    padding: 5px 35px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.main-content
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: whitesmoke;
+}
+.main-content img
+{
+    margin-top: 50px;
+    height: 500px;
+}
+.main-content h1
+{
+    margin: 0px;
+    font-size: 40px;
+}
+.main-content #tagline
+{
+    font-size: 20px;
+}
+.main-content article
+{
+    line-height: 35px;
+    margin-right: 200px;
+}
+input[type='text'], input[type='password']
+{
+    color: gray;
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+.long-width
+{
+    width: 200px;
+    
+}
+footer
+{
+    background-color: rgb(10, 60, 124);
+    padding: 1px;
+}
+
+
+@media(max-width: 500px)
+{
+    .main-nav
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;   
+    }
+    .main-nav div
+    {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .main-nav div button
+    {
+        margin-top: 10px;
+        align-items: center;
+    }
+    .main-content
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+    }
+    .main-content img 
+    {
+        height: 400px;
+    }
+    .main-content article h1
+    {
+        margin-left: 200px;
+        font-size: 35px;
+    }
+    #tagline
+    {
+        margin-left: 200px;
+    }
+    .details
+    {
+        margin-left: 200px;
+    }
+    .details button
+    {
+        margin-left: 130px;
+        margin-bottom: 25px;
+        margin-top: 25px;
+        
+    }
+    footer
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }  
+}
+
+
+@media(min-width: 501px) and (max-width: 720px)
+{
+    .main-nav
+    {
+        flex-direction: column;
+    }
+    .main-nav div
+    {
+        margin-top: 2px;
+        margin-bottom: 56px;
+    }
+}
+
+@media(max-width: 721px) and (min-width: 920px)
+{
+    .main-nav
+    {
+        flex-direction: column;
+    }
+    .main-nav div
+    {
+        margin-top: 2px;
+        margin-bottom: 56px;
+    }
+}
+
